@@ -22,3 +22,7 @@ public class Temperature {
 		System.out.println(result + "F");
 	}
 }
+
+
+
+IT'S  OK.
