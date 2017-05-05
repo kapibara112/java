@@ -12,3 +12,13 @@ String x1, x2;
 		
 		
 
+import java.util.Scanner;
+
+public class Temperature {
+	public static void main (String[] args) {
+		Scanner s = new Scanner(System.in);
+		double name = s.nextDouble();
+		double result = ((name * 9) / 5) + 32;
+		System.out.println(result + "F");
+	}
+}
