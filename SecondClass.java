@@ -24,7 +24,7 @@ public class SecondClass {
         driver.findElement(By.cssSelector("input[name='password']")).sendKeys("123456");
         driver.findElement(By.cssSelector("[type='submit']")).click();
         sleep(5);
-        //Assert.assertFalse(driver.getTitle().contains("Сожалеем, Вы неправильно ввели логин или пароль!\n"),"NOT LOGED IN!");
+        Assert.assertTrue(checkIfElementExists("a[href='/account/logout/?next=/']"));
     }
     @Test(priority = 2, description = "Add bike to cart", dependsOnMethods = "login")
     public void addBike(){
