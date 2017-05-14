@@ -52,6 +52,7 @@ public class SecondClass {
     public void logout(){
         driver.findElement(By.cssSelector("a[href='/accounts/logout/?next=/")).click();
         sleep(5);
+        Assert.assertTrue(checkIfElementExists("[type='submit']"));
             }
     @BeforeClass
     public void startChrome(){
