@@ -17,7 +17,7 @@ public class SecondClass {
             System.out.println(e);
         }
     }
-    @Test(priority = 1, description = "Successful login into 7toys.com.ua")
+    @Test(priority = 1, description = "Successful login into 7toys")
     public void login(){
         driver.findElement(By.cssSelector("a[href='http://atompro.pp.ua/account']")).click();
         driver.findElement(By.cssSelector("input[name='email']")).sendKeys("tapir112@yandex.ru");
